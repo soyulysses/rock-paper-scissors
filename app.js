@@ -4,11 +4,7 @@ let lastUserSelection = 0;
 let computerPoints = 0;
 
 function generateComputerSelection(lastSelection) {
-    console.log("-GENERATE COMPUTER SELECTION-");
-
     if (Math.floor(Math.random() * 3) === 0) {
-        console.log("-THE COMPUTER WAS SMART-");
-
         switch (lastSelection) {
             case 0:
                 return 1;
@@ -20,8 +16,6 @@ function generateComputerSelection(lastSelection) {
                 return Math.floor(Math.random() * 3);
         }
     } else if (Math.floor(Math.random() * 6) === 0) {
-        console.log("-THE COMPUTER WAS SUPERSMART-");
-
         switch (lastSelection) {
             case 0:
                 return 0;
@@ -38,13 +32,6 @@ function generateComputerSelection(lastSelection) {
 }
 
 function getWinner(computer, user) {
-    console.log("-GET WINNER-");
-
-    /*
-        0 -> Empate
-        1 -> Usuario
-        2 -> Ordenador
-    */
     if (user === computer) {
         return 0;
     } else if ((user === 0 && computer === 1) ||
@@ -57,8 +44,6 @@ function getWinner(computer, user) {
 }
 
 function play(selection) {
-    console.log("-PLAY-");
-
     const roundWinner = getWinner(generateComputerSelection(lastUserSelection), selection);
     lastUserSelection = selection;
 
