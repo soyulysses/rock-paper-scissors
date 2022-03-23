@@ -172,7 +172,8 @@ footer {
     height: 100vh;
     background-color: var(--pink-coral-secondary);
 
-    font-size: 4rem;
+    font-size: 3rem;
+    padding: 1rem;
     font-weight: 900;
 
     gap: 3rem;
