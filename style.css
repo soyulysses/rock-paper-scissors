@@ -175,6 +175,7 @@ footer {
     font-size: 3rem;
     padding: 1rem;
     font-weight: 900;
+    text-align: center;
 
     gap: 3rem;
 
@@ -216,6 +217,7 @@ footer {
 .title {
     font-size: 1.5rem;
     font-weight: 900;
+    text-align: center;
 
     color: white;
     height: calc(1.75rem);
